@@ -17,7 +17,7 @@
 ### If authenticating with application context, config should be an object of the form:
 
 ```js
-    "consumer_key":         "KEY",
-  , "consumer_secret":      "KEY",
-  , "app_only_auth":        true
+"consumer_key": "KEY",
+"consumer_secret": "KEY",
+"app_only_auth":  true
 ```
