@@ -31,3 +31,19 @@ const Client = new Twit({
 //
 //  tweet 'hello world!'
 //
+Client.post('statuses/update', { status: 'hello world!' }, function(err, data, response) {
+  console.log(response)
+  try {
+    if(data){
+ console.log(data) 
+ 
+
+    }if(!data){
+  console.log("No Data Found")
+    }
+  } catch (error) {
+    console.log(err);
+    console.log(error)
+  }
+  
+})
