@@ -1,2 +1,16 @@
-config.json
+# NPM Stuff
 node_modules
+
+## Lock files
+yarn.lock
+package-lock.json
+
+# Env
+config.json
+.env
+
+# Locals
+*.local
+
+# Production Code
+dist
