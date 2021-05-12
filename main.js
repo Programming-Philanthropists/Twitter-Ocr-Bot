@@ -11,5 +11,23 @@
     GNU General Public License for more details.
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
-const twit = require("twit");
+**/
+
+const Twit = require('twit')
+const config = require("./Json/config.json");
+
+
+
+
+const Client = new Twit({
+  consumer_key:         `${config.consumer_key}`,  //Check Readme for Key and Info
+  consumer_secret:      `${config.consumer_secret}`,  //Check Readme for Key and Info
+  access_token:         `${config.access_token}`,  //Check Readme for Key and Info
+  access_token_secret:  `${config.access_token_secret}`,  //Check Readme for Key and Info
+  timeout_ms:           60*1000,// optional HTTP request timeout to apply to all requests.
+  strictSSL:            true,   // optional - requires SSL certificates to be valid.
+});
+
+//
+//  tweet 'hello world!'
+//
