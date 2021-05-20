@@ -1,14 +1,23 @@
 {
-  "name": "Twitter-Ocr",
+  "name": "twitter-ocr",
   "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
   "dependencies": {
-    "twit": "^2.2.11"
+    "dotenv": "^9.0.2",
+    "twit": "^2.2.11",
+    "twitter-api-client": "^1.3.8"
   },
   "devDependencies": {
     "@types/node": "^15.0.2",
+    "@types/twit": "^2.2.28",
+    "rimraf": "^3.0.2",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsnd --respawn src/index.ts",
+    "build": "rimraf dist && tsc"
   }
 }
