@@ -2,10 +2,11 @@
 import { config } from 'dotenv'
 config()
 
-import { client } from "./client";
+import { twitClient } from "./client";
+import { handleStream } from './Handlers/handleStream';
 
-const Stream = client.stream("statuses/filter", { track: '#covid', lang: "en" })
+// TODO: Update username when decided!!!
+const Stream = twitClient.stream("statuses/filter", { track: ["piyushsthr"] })
 
-Stream.on("tweet", function (tweet) {
-  console.log(tweet)
-})
+// Stream
+Stream.on("tweet", handleStream)

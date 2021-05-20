@@ -5,6 +5,7 @@ declare global {
       API_SECRET: string,
       ACCESS_TOKEN: string,
       ACCESS_TOKEN_SECRET: string
+      USERNAME: string
     }
   }
 }
